@@ -25,14 +25,14 @@ public class BinarySearchTree {
 	}
 	
 	
-	public void insert(int id){//id == kitaptaki z
+	public void insert(int id){
 		Node z = new Node(id);
 		if(root==null){
 			root = z;
 			return;
 		}		
-		Node parent = null; //parent == kitaptaki y
-		Node current = root; // current ==  kitaptaki x
+		Node parent = null; 
+		Node current = root;
 		while(current != null){
 			parent = current;
 			if(id<current.key){				
